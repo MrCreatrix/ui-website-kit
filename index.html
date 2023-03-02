@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -34,14 +34,14 @@
                                         <li class="active menu-item-has-children"><a href="#">Home</a>
                                             <ul class="sub-menu">
                                                 <li class="active"><a href="index.html">Creative Agency</a></li>
-                                                <li><a href="index-2.html">Personal Portfolio</a></li>
+                                                <li><a href="index-2.html">Portfolio</a></li>
                                                 <li><a href="index-3.html">Digital Agency</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="about-us.html">About Us</a></li>
                                         <li class="menu-item-has-children"><a href="#">pages</a>
                                             <ul class="sub-menu">
-                                                <li><a href="about-me.html">About Me</a></li>
+                                                <li><a href="about-me.html">About Us</a></li>
                                                 <li><a href="team.html">Team Page</a></li>
                                                 <li><a href="team-details.html">Team Details</a></li>
                                                 <li><a href="project-details.html">Portfolio Details</a></li>
@@ -49,7 +49,7 @@
                                                 <li><a href="contact.html">Contact Us</a></li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item-has-children"><a href="#">News</a>
+                                        <li class="menu-item-has-children"><a href="#">Blogs</a>
                                             <ul class="sub-menu">
                                                 <li><a href="blog.html">Our Blog</a></li>
                                                 <li><a href="blog-details.html">Blog Details</a></li>
@@ -237,7 +237,17 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- <script src="assets/js/main.js"></script> -->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+        $(".header-btn").on('click', function () {
+            $('.header-contact-wrap, .body-contact-overlay').toggleClass("active");
+            $('body').toggleClass("fix");
+        });
+        $(".body-contact-overlay").on('click', function () {
+            $('.header-contact-wrap, .body-contact-overlay').removeClass("active");
+        });
+    </script>
 
 </body>
 

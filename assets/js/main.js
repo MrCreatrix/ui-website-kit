@@ -70,16 +70,14 @@
     });
 
     /*=============================================
-        =          header btn active               =
+    =          header Button             =
     =============================================*/
-    $(function () {
-        $(".header-btn").on('click', function () {
-            $('.header-contact-wrap, .body-contact-overlay').toggleClass("active");
-            $('body').toggleClass("fix");
-        });
-        $(".body-contact-overlay").on('click', function () {
-            $('.header-contact-wrap, .body-contact-overlay').removeClass("active");
-        });
+    $(".header-btn").on('click', function () {
+        $('.header-contact-wrap, .body-contact-overlay').toggleClass("active");
+        $('body').toggleClass("fix");
+    });
+    $(".body-contact-overlay").on('click', function () {
+        $('.header-contact-wrap, .body-contact-overlay').removeClass("active");
     });
 
 });
